@@ -1,0 +1,48 @@
+$size-title: 40px;
+$size-below-header: calc(100vh - 100px);
+$color-paper: #424242;
+$color-white: white;
+
+.container {
+    height: $size-below-header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2.page-title {
+    color: $color-white;
+    font-size: $size-title;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.grid-title {
+    font-size: 16px;
+}
+.grid-value {
+    font-size: 18px;
+}
+.error-message {
+    margin: 5px 0px;
+}
+.hide {
+    display: none;
+}
+
+// Change input autofill color
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus
+input:-webkit-autofill, 
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    border: 1px solid white;
+    -webkit-text-fill-color: white;
+    box-shadow: 0 0 0px 1000px #424242 inset;
+    transition: background-color 5000s ease-in-out 0s;
+}

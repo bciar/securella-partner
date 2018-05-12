@@ -1,0 +1,53 @@
+.create-guard-container {
+  height: calc(100vh - 64px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  > div {
+    -webkit-box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid #5b5b5b;
+    background-color: #424242;
+  }
+
+  h2 {
+    font-size: 40px;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 0;
+  }
+
+  h5 {
+    color: #7ac2bb;
+    font-size: 14px;
+  }
+
+  .fields-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > div {
+      width: 100% !important;
+      max-width: 400px !important;
+    }
+  }
+
+  // Change input autofill color
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover, 
+  input:-webkit-autofill:focus
+  input:-webkit-autofill, 
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    border: 1px solid white;
+    -webkit-text-fill-color: white;
+    -webkit-box-shadow: 0 0 0px 1000px #424242 inset;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+}

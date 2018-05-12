@@ -1,0 +1,28 @@
+.guard-details-container {
+    height: calc(100vh - 64px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > div {
+        max-width: 600px;
+        margin-top: -200px !important;
+        background-color: #424242 !important;
+
+        h2 {
+            color: white;
+            font-size: 40px;
+            font-weight: 300;
+            text-align: center;
+        }
+
+        .guard-title {
+            font-size: 16px;
+            // color: #49c98a;
+        }
+
+        .guard-value {
+            font-size: 18px;
+        }
+    }
+}

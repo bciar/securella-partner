@@ -1,0 +1,55 @@
+@import './style/signin.scss';
+@import './style/guards.scss';
+@import './style/create-guard.scss';
+@import './style/guard-details.scss';
+@import './style/base.scss';
+@import './style/dashboard.scss';
+@import './style/alarm.scss';
+@import './style/account.scss';
+@import './style/alarm-map-container.scss';
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #303030;
+  font-family: 'Roboto', sans-serif;
+}
+
+.App {
+  text-align: center;
+  background-color: #303030;
+  height: 100vh;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.clearfix {
+  clear: both;
+}
+
+.hidden {
+  visibility: hidden;
+}

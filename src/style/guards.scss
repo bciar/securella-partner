@@ -1,0 +1,70 @@
+.guards-container {
+  height: calc(100vh - 144px);
+  padding: 40px;
+
+  h3 {
+    margin: 0;
+    color: white;
+    text-align: left;
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+
+  table {
+    thead {
+      th {
+        text-align: center !important;
+      }
+    }
+
+    tbody {
+      tr {
+        td {
+          background-color: #555555 !important;
+          text-align: center !important;
+          font-size: 16px;
+
+          .email {
+            color: #47b57f;
+          }
+
+          .name {
+            text-align: left;
+            padding: 0 30px;
+          }
+
+          a {
+            text-decoration: none;
+            margin-right: 10px;
+          }
+
+          .editor-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #49c98a;
+
+            svg {
+              color: #49c98a !important;
+              font-size: 24px;
+            }
+          }
+
+          .show-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: pink;
+
+            svg {
+              color: rgb(255, 128, 171) !important;
+              margin-left: 10px;
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

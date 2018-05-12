@@ -1,0 +1,101 @@
+.dash__root {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dash__button {
+  margin: 2;
+  padding: 10;
+}
+
+.dash__page {
+  width: 100%;
+  overflow: hidden;
+  height: calc(100vh - 64px);
+
+  .dash__menu {
+    width: 20%;
+    margin: 0;
+    float: left;
+    height: 100%;
+    background: #222;
+  
+    div[role='presentation'] {
+      width: 100%!important;
+    }
+  
+    div[role='menu'] {
+      padding: 2px 4px 2px 0px!important;
+      min-width: 100%!important;
+    }
+  
+    .dash__menuitem {
+      padding: 0px auto;
+      min-width: 100%;
+      margin: 2px 0px!important;
+      float: left;
+      color: #ddd;
+      font-weight: bold!important;
+      text-align: left;
+      text-transform: uppercase;
+      background:#333!important;
+  
+      &:hover {
+        background: #444!important;
+      }
+  
+      .dash__mcircle {
+        margin-left: 30px!important;
+      }
+      
+      .dash__lcircle {
+        width: 30px!important;
+        height: 30px!important;
+        margin-top: 8px!important;
+        margin-left: 28px!important;
+      }
+    }
+  }
+  
+  .dash__map {
+    float: left;
+    width: 80%!important;
+    margin: 0;
+    padding: 0;
+  
+    .dash-map-container__size {
+      height: calc(100vh - 64px) !important;
+    }
+    
+    .dash-map-infowindow {
+      background: #222;
+      margin: 0px!important;
+    }
+    
+    .dash-map-infowindow__p {
+      color: #222;
+      margin: 0;
+    }
+  
+    .map-container {
+      position: relative;
+  
+      > button {
+        position: absolute !important;
+        top: 10px;
+        right: 50px;
+        background: white !important;
+        color: black;
+        z-index: 1;
+        height: 25px !important;
+        width: 25px !important;
+        padding: 0 !important;
+  
+        svg {
+            color: rgb(117, 117, 117) !important;
+        }
+      }
+    }
+  }
+}
+

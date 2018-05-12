@@ -1,0 +1,125 @@
+.signin-form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 64px);
+
+  .title-wraper {
+    color: white;
+    text-align: left;
+    width: 800px;
+    padding-bottom: 50px;
+    margin-top: -200px;
+
+    h2 {
+      font-size: 80px;
+      font-weight: 500;
+      margin: 0;
+    }
+
+    h5 {
+      font-size: 20px;
+      font-weight: 300;
+      margin-bottom: 0;
+    }
+  }
+
+  .login-wrapper {
+    min-width: 300px;
+    min-height: 200px;
+    width: 500px;
+    height: 350px;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid #5b5b5b;
+    background-color: #424242;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    #errorLabel {
+      color: #7ac2bb;
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    p {
+      text-align: left;
+      margin-left: 20px;
+    }
+
+    label {
+      color: #b1b1b1 !important;
+    }
+
+    .buttons-container {
+      display: flex;
+      margin-top: 20px;
+      flex-direction: column;
+      width: 308px;
+
+      a {
+        color: #7ac2bb;
+        text-decoration: none;
+        margin-right: 20px;
+      }
+
+      .buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        input {
+          color: white !important;
+        }
+
+        .toggle {
+          margin-bottom: 0 !important;
+          width: calc(100% - 50px) !important;
+
+          label {
+            width: calc(100% - 80px) !important;
+            text-align: left;
+            margin-left: 25px;
+          }
+
+          > div {
+            flex-direction: row-reverse;
+          }
+        }
+
+        button {
+          background-color: #49ca89 !important;
+          border-radius: 50% !important;
+          box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+          div {
+            div {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Change input autofill color
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover, 
+  input:-webkit-autofill:focus
+  input:-webkit-autofill, 
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    border: 1px solid white;
+    -webkit-text-fill-color: white;
+    -webkit-box-shadow: 0 0 0px 1000px #424242 inset;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+}
